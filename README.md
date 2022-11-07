@@ -1,5 +1,5 @@
 # hotel-book-cancelation
-Machine Learning application that predicts if hotel booking, given some covariates values, is cancelled. The dataset used and some description can be found at https://www.sciencedirect.com/science/article/pii/S2352340918315191.
+Machine Learning application that predicts if a hotel booking, given some covariates values, is cancelled. The dataset used and some description can be found at https://www.sciencedirect.com/science/article/pii/S2352340918315191.
 
 The application returns 0 (Not Cancelled) or 1 (Cancelled) via a POST request, that needs to be structured like this:
 ```
@@ -43,4 +43,4 @@ The application returns 0 (Not Cancelled) or 1 (Cancelled) via a POST request, t
 }
 ``` 
 
-The final model is neural network with with two hidden layers and the is computed via a sigmoid function. The data was standard scaled and the new sample to predict will be scaled also. Some data treatment and feature importances analysis can be found at the ml-dev/notebook.ipynb
+The final model is a neural network with two hidden layers and the output is computed via a sigmoid function. The data was standard scaled and the new sample to predict will be scaled also. Some data treatment and features importances analysis can be found at the ml-dev/notebook.ipynb

@@ -43,4 +43,7 @@ The application returns 0 (Not Cancelled) or 1 (Cancelled) via a POST request, t
 }
 ``` 
 
-The final model is a neural network with two hidden layers and the output is computed via a sigmoid function. The data was standard scaled and the new sample to predict will be scaled also. Some data treatment and features importances analysis can be found at the ml-dev/notebook.ipynb
+The final model is a neural network with two hidden layers and the output is computed via a sigmoid function. The data was standard scaled and the new sample to predict will be scaled also. Some data treatment and features importances analysis can be found at ml-dev/notebook.ipynb.
+
+The application uses Docker and can be runned via the command (the image is published in my Docker Hub account):  
+`docker run -p5000:5000 marcosaugusto47/hotel-book-app`
